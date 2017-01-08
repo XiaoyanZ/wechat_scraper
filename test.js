@@ -25,8 +25,8 @@ var x2 = Xray({
 	}
 }).timeout(10000).delay(15000);
 
-var city = "广州";	//keywords for search engine
-var url = "http://weixin.sogou.com/weixin?type=2&page=5&query=%E9%99%88%E4%B9%94%E6%81%A9+%E6%95%B4%E5%BD%A2+" + encodeURIComponent(city);
+var keywords = "广州";	//keywords for search engine
+var url = "http://weixin.sogou.com/weixin?type=2&query=" + encodeURIComponent(keywords);
 x(url, 'div.txt-box', [{
 	article_title: 'h3@text',
 	article_info: 'p.txt-info@text',
